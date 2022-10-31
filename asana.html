@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asana</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <style>
+    *{
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+      /* overflow-x: hidden; */
+    }
+
+    body{
+      background: #EEEBEA;
+    }
+    #intro a:link, a:visited{
+      color: #000;
+    }
+    #last{
+      position: relative;
+      top: 100px;
+    }
+    #last a{
+      color: #fff;
+      text-decoration: none;
+    }
+    #last a:hover{
+      text-decoration: underlinea;
+    }
+    #sl{
+      position: relative;
+      top: 100px;
+    }
+    #ident a .bi:hover{
+      color: skyblue;
+    }
+    /* @media screen and (max-width:960px) {
+      #asa{
+        display: none;
+      }
+    } */
+    @media screen and (max-width:960px) {
+      #asa, #talk{
+        display: none;
+      }
+      #intro a:link, a:visited{
+        text-decoration: underline;
+      }
+      #intro{
+        font-size: 10px;
+        line-height: 22px;
+        margin-bottom: -10px;
+      }
+      #ana{
+        padding: 0px 20px;
+
+      }
+      #sl{
+      position: relative;
+      top: 500px;
+      }
+      #last{
+        position: relative;
+        top: 500px;
+      }
+      #get{
+        float: left;
+      }
+      /* #pics{
+        justify-content: center;
+        margin-left: 250px;
+      } */
+    }
+    @media screen and (min-width:960px) {
+        #first{
+          display: none;
+        }
+
+        #ana{
+          position: relative;
+          left: 100px;
+          top: -430px;
+        }
+        #intro{
+          position: relative;
+          left: -400px;
+          top: 200px;
+        }
+        #plan{
+          text-align: left;
+          position: relative;
+          left: 310px;
+          margin-top: 60px;
+          width: 400px;
+        }
+      }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light" style="position: sticky; top: 0px; z-index: 2;">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><img src="images/asan.png" alt="Asana logo" style="width: 200px; height: 40px;"></a>
+
+      <div class="container-fluid">
+        <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav" style="color: #fff;">
+          <ul class="navbar-nav">
+            <li class="navbar-item"><a class="nav-link" href="valuemax.html">ValueMax</a></li>
+            <li class="navbar-item"><a class="nav-link" href="#">Dell</a></li>
+            <li class="navbar-item"><a class="nav-link" href="#">Meta</a></li>
+            <li class="navbar-item"><a class="nav-link" href="smile.html">Smile</a></li>
+            <li class="navbar-item"><a class="nav-link" href="hostinger.html">Hostinger</a></li>
+            <li class="navbar-item"><a class="nav-link" href="bluehost.html">BlueHost</a></li>
+            <li class="navbar-item"><a class="nav-link" href="index.html">NYSCCBO</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <button id="get" class="btn btn-dark justify-content-end" style="border-radius: 0px;">Getting Started</button>
+  </nav>
+  <!-- Intro -->
+  <div class="container-sm" id="intro">
+    <div class="text-center">
+      <h3 class="h3" id="first">Talk with our sales team</h3>
+      <img src="images/asa1.jpg" id="asa" alt="">
+      <p class="" id="plan">Looking for more information or want to try one of our paid Asana plans? Submit your information and an Asana representative will follow up with you as soon as possible. Have a simple question? <a href="#">Check out our FAQ</a>
+
+      </p>
+    </div>
+  </div>
+  <!-- end of container intro -->
+  <!-- Form -->
+  <div class="container-lg" id="bana">
+    <div class="row justify-content-center my-5" id="ana">
+      <div class="col-lg-6 py-4 px-4" style="background: #fff; width: 695px; border-radius: 3px; box-shadow: 0px 0px 30px rgba(0, 0, 0, .3);">
+        <h4 class="display-6 mt-3 mb-5" id="talk">Talk with our sales team</h4>
+        <h4 class="h6 mb-4" style="color: #F3A813;"> Fields marked with asterisk (*) are required.</h4>
+        <form action="">
+          <div class="row mb-4">
+            <div class="col-md-6">
+              <label for="" class="form-label mb-3 fw-bold">First Name <span style="color: #F3A813;"><sup>*</sup></span></label>
+              <input type="text" class="form-control" placeholder="e.g., John">
+            </div>
+            <div class="col-md-6">
+              <label for="" class="form-label mb-3 fw-bold">Last Name <span style="color: #F3A813;"><sup>*</sup></span></label>
+              <input type="text" class="form-control" placeholder="e.g., John">
+            </div>
+
+          </div>
+          <!-- first and last name row -->
+          <div class="row mb-4">
+            <div class="col-md-6">
+              <label for="" class="form-label mb-3 fw-bold">Company Email <span style="color: #F3A813;"><sup>*</sup></span></label>
+              <input type="text" class="form-control" placeholder="name@company.com">
+            </div>
+            <div class="col-md-6 ">
+              <label for="" class="form-label mb-3 fw-bold">Phone Number <span style="color: #F3A813;"><sup>*</sup></span></label>
+              <input type="text" class="form-control" placeholder="+1 555 655 5656">
+            </div>
+
+          </div>
+          <!-- company and phone row -->
+          <div class="row mb-4">
+            <div class="col-md-6">
+              <label for="" class="form-label mb-3 fw-bold">Company Size <span style="color: #F3A813;"><sup>*</sup></span></label>
+              <select name="" id="" class="form-select">
+                <option value="">--Select--</option>
+                <option value="">1-14</option>
+                <option value="">15-49</option>
+                <option value="">50-99</option>
+                <option value="">100-499</option>
+                <option value="">500-1999</option>
+                <option value="">2000+</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="" class="form-label mb-3 fw-bold">Company Headquarters <span style="color: #F3A813;"><sup>*</sup></span></label>
+              <select name="" id="" class="form-select">
+                <option value="">--Select--</option>
+                <option value="">North America</option>
+                <option value="">South America</option>
+                <option value="">Europe</option>
+                <option value="">Asia</option>
+                <option value="">Africa</option>
+                <option value="">Australia</option>
+              </select>
+          </div>
+          <!-- comapny size and headquarter -->
+          <div class="col-md-12 mb-4 mt-5">
+            <label for="" class="form-label mb-3 fw-bold">What would you like to discuss? <span style="color: #F3A813;"><sup>*</sup></span>
+            </label>
+            <textarea  id=""  class="form-control" style="height: 140px; resize: none;" placeholder="Tell us about your team and give details about a projec or process you would like to track in Asana..."></textarea>
+          </div>
+          <!-- textarea -->
+          <div>
+            <button class="btn btn-dark btn-lg px-5" type="submit" style="border-radius: 0px;">Submit</button>
+          </div>
+
+          <div>
+            <marquee behavior="" direction="ltr" style="color: red;" class="fw-bolder">CAVEAT: THIS IS A STUDENT PROJECT AND NOT AN ATTEMPT TO CLONE THE EXISTING WEBPAGE</marquee>
+          </div>
+        </form>
+      </div>
+      <!-- end of col housing form -->
+    </div>
+       <!--end of row justify  -->
+    </div>
+
+  </div>
+  <!-- end of container illustration -->
+
+
+  <div class="container-fluid bg-light" id="sl" style="margin-top: -400px;">
+    <div class="row p-5">
+      <div class="col-lg-2 col-md-6 col-sm-6">
+        <img src="images/sporty.svg" alt="amazon">
+      </div>
+      <div class="col-lg-2 col-md-6 col-sm-6">
+        <img src="images/Amazon.svg" alt="amazon" class="image-fluid">
+      </div>
+      <div class="col-lg-2 col-md-6 col-sm-6">
+        <img src="images/p&g.svg" alt="amazon" class="image-fluid">
+      </div>
+      <div class="col-lg-2 col-md-6 col-sm-6">
+        <img src="images/japan.svg" alt="amazon" class="image-fluid">
+      </div>
+      <div class="col-lg-2 col-md-6 col-sm-6">
+        <img src="images/acce.svg" alt="amazon" class="image-fluid">
+      </div>
+      <div class="col-lg-2 col-md-6 col-sm-6">
+        <img src="images/xero.svg" alt="amazon" class="image-fluid">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- last container -->
+  <div class="container-fluid" id="last" style="background: #2A2B2C; color:#fff;">
+    <div class="row mb-2 justify-content-center align-item-center p-5">
+
+      <div class="col-lg-2"><p>&copy; 2022 Asana, Inc</p></div>
+      <div class="col-lg-2"><p><i class="bi bi-globe2"></i> <a href="#">English</a></p></div>
+      <div class="col-lg-2"><p><a href="#">Terms &amp Conditions</a></p></div>
+      <div class="col-lg-3" id="ident">
+        <a href="#"  style="background: #000; border-radius: 360px;"><i class="bi bi-twitter p-2 "></i></a>
+        <a href="#"  style="background: #000; border-radius: 360px"><i class="bi bi-linkedin p-2"></i></a>
+        <a href="#"  style="background: #000; border-radius: 360px"><i class="bi bi-instagram p-2"></i></a>
+        <a href="#"  style="background: #000; border-radius: 360px"><i class="bi bi-facebook p-2"></i></a>
+        <a href="#"  style="background: #000; border-radius: 360px"><i class="bi bi-youtube p-2"></i></i></a>
+      </div>
+
+
+      <div class="col-lg-3">
+        <a href="#"><img src="images/Download_App_Store_Badge_US (1).svg" alt=""></a>
+        <a href="#"><img src="images/Google_Play_EN.svg" style="width: 140px;" alt=""></a>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

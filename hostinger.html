@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hostinger</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family:  sans-serif;
+    }
+    #cPanel{
+      background-image: url(hostinger/header-bg-1366-b3e2cd1f4f.svg);
+    }
+    .cli li{
+      font-size: 14px;
+      margin-bottom: 1rem;
+      color: #fff;
+      margin-bottom: 5px;
+
+    }
+    .cpanel {
+      font-size: 14px;
+      color: #2f1c6a;
+    }
+    .accord{
+      font-size: 34px;
+      color: #2f1c6a;
+    }
+    .accord-body{
+      font-size: 15px;
+      line-height: 21px;
+      color: #727586;
+
+    }
+    /* .accordion-button{
+      background-color: #fff;
+      color:#2f1c6a;
+
+    } */
+    .bi{
+      color: rgb(50, 255, 50);
+    }
+     a:link, #host a:visited {
+      font-size: 14px;
+      line-height: 19.6px;
+      color: #2f1c6a;
+      margin-top: 3px;
+
+    }
+    #host a:hover {
+      /* text-decoration: underline; */
+      color: rgba(47, 28, 105, 0.5);
+    }
+    /* .accord, .accord-body{
+      margin-top: 2rem;
+    } */
+    /* #off ul {
+      float: right;
+    } */
+    .bi{
+      font-size: 1.1rem;
+      color: #fff;
+    }
+    h6{
+      position: sticky;
+      top: 3.7rem;
+      background: #fff;
+    }
+    .mi{
+      color: rgba(47, 228, 105, 0.5);
+      font-weight: 3rem;
+    }
+    @keyframes move{
+      0%{ right: -1000px;
+      }
+      100%{
+        right: 0px;
+      }
+    }
+    #meta{
+      position: relative;
+      z-index: 2;
+      animation-name: move;
+      animation-duration: 2s;
+    }
+    .card:hover{
+      transition-duration: 1500ms;
+      transform: scale(1.04);
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light fixed-top" id="product">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img style="width:100%; height: 1.7rem ;" src="hostinger/Hostinger-900x0.png" alt="Hostinger"> &nbsp;<img style="width:15%; height: 1.2rem ;" src="hostinger/27_Star_US_Flag.svg" alt=""></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="offcanvas offcanvas-start " id="offcanvas">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <ul class="navbar-nav pt-3 justify-content-end" >
+          <div class="offcanvas-body " id="off">
+
+                <li class="navbar-item"><a class="nav-link" href="smile.html">Smile</a></li>
+                <li class="navbar-item me-4"><a class="nav-link" href="bluehost.html">BlueHost</a></li>
+                <li class="navbar-item me-4"><a class="nav-link" href="asana.html">Asana</a></li>
+                <li class="navbar-item me-5"><a class="nav-link" href="index.html">NYSCCBO</a></li>
+                <li class="navbar-item me-4"><a class="nav-link" href="valuemax.html">ValueMax</a></li>
+                <li class="navbar-item me-4"><a class="nav-link" href="#">Meta</a></li>
+                <li class="navbar-item me-4"><a class="nav-link" href="#">Dell</a></li>
+
+              <li class="navbar-item border border-2 rounded-pill "><a class="nav-link" href="#"><i class="bi bi-lock-fill" style="color:#2f1c6a"></i>LOG IN</a></li>
+              <li class="navbar-item "><a class="nav-link" href="#"><i class="bi bi-cart3"  style="color:#2f1c6a"></i>Cart</a></li>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </nav>
+    <!-- end of navbar -->
+
+
+
+
+
+    <div class="container-fluid my-5" id="cPanel"><!-- first div head -->
+      <div class="row justify-content-center p-5"> <!-- row head -->
+        <div class="col-lg-6 p-5"> <!-- IDEA: head of col 1 -->
+          <h3 style="font-size: 46px; line-height: 50.6px; color: #fff;">cPanel Hosting</h3>
+          <h5 style="font-size: 24px; line-height: 36px; color: #fff;">Perfect package for personal websites.</h5>
+          <h5 style="font-size: 24px; line-height: 36px; color: #fff;">Starting from $2.59 /month.</h5>
+          <div class="row"> <!-- IDEA: row containing ul -->
+            <div class="col-6">
+              <ul class="nav cli">
+                <li class="nav-item"><i class="bi bi-check"></i>1 TB Bandwidth</li>
+                <li class="nav-item"><i class="bi bi-check"></i>Unlimited NySQL Databases</li>
+                <li class="nav-item"><i class="bi bi-check"></i>Unlimited FTP Users</li>
+                <li class="nav-item"><i class="bi bi-check"></i>One-Click Installer</li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="nav cli">
+                <li class="nav-item"><i class="bi bi-check"></i>Cloudfare DDoS Protection</li>
+                <li class="nav-item"><i class="bi bi-check"></i>Automatic Backups</li>
+                <li class="nav-item"><i class="bi bi-check"></i>Free Domain Registration</li>
+                <li class="nav-item"><i class="bi bi-check"></i>Free SSL Certificate</li>
+              </ul>
+            </div>
+
+          </div> <!-- IDEA: end of row containing ul -->
+          <button style="font-size: 18px; line-height: px; width:14rem; color: #fff;" class="btn btn-danger border rounded-pill my-3">Start Now</button>
+          <ul style="font-size: 14px; color: #fff;" class="nav"><li class="nav-item">30-Day Money-Back Guarantee</li></ul>
+        </div> <!-- IDEA: end of col 1 -->
+
+        <div class="col-lg-6"> <!-- IDEA: head col 2 -->
+          <img id="meta" style="width: 100%;" src="hostinger/hostingadvice-header-img-c874d52671.svg" alt="">
+        </div> <!-- IDEA: end col 2 -->
+      </div> <!-- row end -->
+    </div> <!-- end of first div -->
+
+    <div class="container-lg">
+      <div class="text-center">
+        <h2> Choose your web hosting Plan</h2>
+      </div>
+      <div class="row my-5 align-items-center justify-content-center">
+        <div class="col-8 col-sm-7 col-md-5 col-lg-5 col-xl-3 mt-5">
+          <div class="card shadow">
+            <div class="card-body text-center py-4">
+              <h4 class="card-title mt-2 mb-5" style="font-size: 17px; line-height:23.8px; color:#2f1c6a">cpanel Hosting Silver</h4>
+              <span class="lead" style="font-size: 14px; line-height: 14px; text-decoration:line-through;">$8.99</span>
+              <span style="font-size: 14px; line-height: 17px; color: #fff; background-color:#8c85ff" class="border rounded-pill px-2 py-2"style="background:purple">Save 71%</span>
+              <p class="display-5 fw-bold"style="font-size: 56px; line-height: 56px; color: #2f1c6a;"><sup style="font-size: 24px; line-height: 28.8px; color: #2f1c6a;">$</sup>2.59<sub style="font-size: 18px; line-height: 28.8px; color: #2f1c6a;">/mo</sub></p>
+              <p style="font-size: 14px; line-height: 16.8px; letter-spacing: 2px;color:#727586;">USD</p>
+              <div style="font-size: 18px; line-height: 27px; color: #fff; background-color:#491bd5; width: 14rem;" class="btn border rounded-pill">Select</div>
+              <p class="lead mt-3" style="font-size: 14px; line-height: 15.4px; color:#999999">$4.99/mo when you renew</p>
+              <ul class="nav card-text" style="font-size: 13px; line-height: 20.8px; color:#2f1c6a;">
+                <li class="nav-item my-1"><i class="bi bi-check mi"></i>50 Websites</li>
+                <li class="nav-item my-1"><i class="bi bi-check mi"></i>30 GB SSD Storage and capacity</li>
+                <li class="nav-item my-1"><i class="bi bi-check mi"></i>1TB Bandwidth</li>
+                <li class="nav-item my-1"><i class="bi bi-check mi"></i>Unlimited MySQL Databases</li>
+                <li class="nav-item my-1"><i class="bi bi-check mi"></i>Unlimited FTP Users</li>
+                <li class="nav-item my-1"><i class="bi bi-check mi"></i>One-Click Installer available</li>
+                <li class="nav-item my-1"><i class="bi bi-check mi"></i>Cloudflare DDoS Protection</li>
+                <li class="nav-item my-1"><i class="bi bi-check mi"></i>Cloud SMTP Delivery</li>
+                <li class="nav-item my-1"><i class="bi bi-check mi"></i>Automatic Backups</li>
+                <li class="nav-item my-1"><i class="bi bi-check mi"></i>SSH Access granting</li>
+                <li class="nav-item my-1"><i class="bi bi-check mi"></i>Free Domain Registration</li>
+                <li class="nav-item my-1"><i class="bi bi-check mi"></i>Free SSL Certificate</li>
+
+              </ul>
+            </div>
+            <div class="card-footer">
+              <p style="font-size: 17px; line-height: 24px; color: #673de6;">See all features</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-8 col-sm-7 col-md-5 col-lg-5 col-xl-3 mt-5">
+          <div class="card shadow">
+            <div class="card-body text-center py-4">
+              <h4 class="card-title mt-2 mb-5" style="font-size: 17px; line-height:23.8px; color:#2f1c6a">cpanel Hosting Silver</h4>
+              <span class="lead" style="font-size: 14px; line-height: 14px; text-decoration:line-through;">$8.99</span>
+              <span style="font-size: 14px; line-height: 17px; color: #fff; background-color:#8c85ff" class="border rounded-pill px-2 py-2 my-5"style="background:purple">Save 72%</span>
+              <p class="display-5 fw-bold"style="font-size: 56px; line-height: 56px; color: #2f1c6a;"><sup style="font-size: 24px; line-height: 28.8px; color: #2f1c6a;">$</sup>3.59<sub style="font-size: 18px; line-height: 28.8px; color: #2f1c6a;">/mo</sub></p>
+              <p style="font-size: 14px; line-height: 16.8px; letter-spacing: 2px;color:#727586;">USD</p>
+              <div style="font-size: 18px; line-height: 27px; color: #fff; background-color:#491bd5; width: 14rem;" class="btn border rounded-pill">Select</div>
+              <p class="lead mt-3" style="font-size: 14px; line-height: 15.4px; color:#999999">$7.99/mo when you renew</p>
+              <ul class="nav card-text" style="font-size: 13px; line-height: 20.8px; color:#2f1c6a;">
+                <li class="nav-item my-1"><i class="bi bi-check mi"></i>50 Websites</li>
+                <li class="nav-item my-1"><i class="bi bi-check mi"></i>30 GB SSD Storage and capacity</li>
+                <li class="nav-item my-1"><i class="bi bi-check mi"></i>1TB Bandwidth</li>
+                <li class="nav-item my-1"><i class="bi bi-check mi"></i>Unlimited MySQL Databases</li>
+                <li class="nav-item my-1"><i class="bi bi-check mi"></i>Unlimited FTP Users</li>
+                <li class="nav-item my-1"><i class="bi bi-check mi"></i>One-Click Installer available</li>
+                <li class="nav-item my-1"><i class="bi bi-check mi"></i>Cloudflare DDoS Protection</li>
+                <li class="nav-item my-1"><i class="bi bi-check mi"></i>Cloud SMTP Delivery</li>
+                <li class="nav-item my-1"><i class="bi bi-check mi"></i>Automatic Backups</li>
+                <li class="nav-item my-1"><i class="bi bi-check mi"></i>SSH Access granting</li>
+                <li class="nav-item my-1"><i class="bi bi-check mi"></i>Free Domain Registration</li>
+                <li class="nav-item my-1"><i class="bi bi-check mi"></i>Free SSL Certificate</li>
+
+              </ul>
+            </div>
+            <div class="card-footer">
+              <p style="font-size: 17px; line-height: 24px; color: #673de6;">See all features</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="container"><!-- IDEA: description container -->
+      <div class="row mb-5"><!-- IDEA: row2 -->
+        <div class="col-lg-6">
+          <h1 class="accord">What Is cPanel Hosting?</h1>
+          <p class="accord-body mb-5">cPanel is known for being easy to use, offering a variety of features that deal with files, MySQL, email, stats, and data tracking as well as SEO optimization. cPanel web hosting is simple, clean and has everything you need to ensure the best experience possible on your journey.</p>
+        </div>
+        <div class="col-lg-6">
+          <img class="mb-5" style="width: 100%;" src="hostinger/why-is-cpanel-hosting-so-popular-544f87a010.webp" alt="">
+        </div>
+      </div> <!-- IDEA: end of row 2 -->
+      <div class="row mb-5"><!-- IDEA: row3 -->
+        <div class="col-lg-6">
+          <img class="mb-5" style="width: 100%;" src="hostinger/high-speed-cpanel-hosting-3b76a04122.webp" alt="">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="accord">High-speed cPanel hosting</h1>
+          <p class="accord-body mb-5">We live in a world where speed determines success. Our cPanel hosting is all about website speed and it is built to save you and your customer every precious second.</p>
+        </div>
+
+      </div> <!-- IDEA: end of row 3 -->
+      <div class="row mb-5"><!-- IDEA: row4 -->
+        <div class="col-lg-6">
+          <h1 class="accord">Secure and Reliable</h1>
+          <p class="accord-body mb-5">cPanel hosting ensures security, reliability, and transparency of the highest standard to put all your worries aside. Automatic and manual backups are an essential part of the cPanel, ensuring the health and safety of your website.</p>
+        </div>
+        <div class="col-lg-6">
+          <img class="mb-5" style="width: 100%;" src="hostinger/secure-and-reliable-d737e51355.webp" alt="">
+        </div>
+      </div> <!-- IDEA: end of row 4 -->
+      <div class="row mb-5"><!-- IDEA: row5 -->
+          <div class="col-lg-6">
+            <img class="mb-5" style="width: 100%;" src="hostinger/easy-to-install-f4af17eb01.webp" alt="">
+          </div>
+          <div class="col-lg-6">
+          <h1 class="accord">Easy to install</h1>
+          <p class="accord-body mb-5">Enjoy full capabilities of cPanel hosting in just a few clicks. No matter the script, our web hosting solution is tailored to meet all of your needs in no time.
+
+          <a href="#">Get cPanel NOW</a></p>
+        </div>
+
+      </div> <!-- IDEA: end of row 5 -->
+      <div class="row mb-5"><!-- IDEA: row6 -->
+        <div class="col-lg-6">
+          <h1 class="accord">With cPanel, you never stop learning</h1>
+          <p class="accord-body mb-5">Our library is stacked with educational resources, tips, and learning videos that will build your skills and confidence instantly.
+            <a href="#">Browse tutorials</a></p>
+        </div>
+        <div class="col-lg-6">
+          <img class="mb-5" style="width: 100%;" src="hostinger/with-cpanel-you-never-stop-learning-06e1b46e28.png" alt="">
+        </div>
+      </div> <!-- IDEA: end of row 6 -->
+    </div><!-- IDEA: end of description container -->
+
+    <div class="container">
+      <div class="row" style="margin-top: 10rem;">
+        <div class="col-lg-12 ">
+          <div class="text-center">
+            <h1 class="accord">30-day money-back guarantee</h1>
+            <p class="accord-body" style="color:#2f1c6a;">In case you are not 100% satisfied, we will refund your payment within a period of 30 days. The process is seamless and risk-free.</p>
+          </div>
+
+          <div class="d-flex justify-content-center mb-5 mt-3">
+            <button style="font-size: 16px; line-height: 16px; color: #fff; background-color:#2f1c6a; width: 14rem;" class="btn border p-3 rounded-pill ">Get Started</button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container"><!-- IDEA: accordion container -->
+      <div class="text-center">
+        <h1 class="accord" style="margin-top: 10rem;">cPanel Web Hosting FAQs</h1>
+        <p class="accord-body" style="color:#2f1c6a;">Find answers to frequently asked questions about cPanel Web Hosting</p>
+      </div>
+
+      <div class="row my-3 d-flex justify-content-center mt-5"> <!-- IDEA: head of accordion row 1-->
+        <div class="col-lg-12 "><!-- IDEA: head of accordion col-->
+          <div class="accordion">
+            <div  class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bolder" style="color:#2f1c6a;background-color:#fff; font-size:21px; line-height:29.4px;" type="button" data-bs-toggle="collapse" data-bs-target="#first">What is cPanel hosting?</button>
+              </h2>
+              <div class="accordion-collapse collapse show" id="first"><!-- IDEA: accordion body container -->
+                <div class="accordion-body"><!-- IDEA: accordion body -->
+                  <p>cPanel is a management platform that acts as the control center for all activities related to the hosting experience. From creating FTP users and email addresses to adding more domains and creating MySQL databases, cPanel offers an abundance of choices, options, and features that grant you absolute control over the web hosting experience.</p>
+                </div><!-- IDEA: end off accordion body -->
+              </div><!-- IDEA: end of accordion body container -->
+
+            </div><!-- IDEA: accordion item -->
+          </div> <!-- IDEA: accordion -->
+        </div><!-- IDEA: end of accordion col -->
+      </div><!-- IDEA: end of accordion row 1 -->
+
+      <div class="row my-3"> <!-- IDEA: head of accordion row 2-->
+        <div class="col-lg-12"><!-- IDEA: head of accordion col-->
+          <div class="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bolder" style="color:#2f1c6a;background-color:#fff; font-size:21px; line-height:29.4px;" type="button" data-bs-toggle="collapse" data-bs-target="#second">Why should I choose cPanel web hosting?</button>
+              </h2>
+              <div class="accordion-collapse collapse show" id="second"><!-- IDEA: accordion body container -->
+                <div class="accordion-body"><!-- IDEA: accordion body -->
+                  <p>Because it’s reliable, proven, trustworthy and diverse. cPanel is a platform that is well respected in the tech community and is seen as an example to follow in its vertical. What makes it stand out is that whilst it simplifies some very complex technical and development issues, it is intuitive, user-friendly and easy-to-use. The platform is designed with the end-user in mind, using a graphic point-and-click interface. It eliminates barriers to entry, making it accessible for users of all experience and skill levels. Once you install cPanel, you’re instantly in charge of the web hosting process with options and decisions at your fingertips.</p>
+                </div><!-- IDEA: end off accordion body -->
+              </div><!-- IDEA: end of accordion body container -->
+
+            </div><!-- IDEA: accordion item -->
+          </div> <!-- IDEA: accordion -->
+        </div><!-- IDEA: end of accordion col -->
+      </div><!-- IDEA: end of accordion row 2 -->
+
+      <div class="row my-3"> <!-- IDEA: head of accordion row 3-->
+        <div class="col-lg-12"><!-- IDEA: head of accordion col-->
+          <div class="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bolder" style="color:#2f1c6a;background-color:#fff; font-size:21px; line-height:29.4px;" type="button" data-bs-toggle="collapse" data-bs-target="#third">Is cPanel needed for managing a website?</button>
+              </h2>
+              <div class="accordion-collapse collapse show" id="third"><!-- IDEA: accordion body container -->
+                <div class="accordion-body"><!-- IDEA: accordion body -->
+                  <p>Are tires needed on a car? To just say yes, would be an understatement. Think of cPanel as the foundation of building a house - without it the tiles, the bathroom windows or the living room carry no weight or significance. Before anything else, you need to get the foundation right. cPanel hosting will allow you to bring the best out of your hosting efforts and maximize both the potential and return of the result.</p>
+                </div><!-- IDEA: end off accordion body -->
+              </div><!-- IDEA: end of accordion body container -->
+
+            </div><!-- IDEA: accordion item -->
+          </div> <!-- IDEA: accordion -->
+        </div><!-- IDEA: end of accordion col -->
+      </div><!-- IDEA: end of accordion row 3 -->
+
+      <div class="row my-3"> <!-- IDEA: head of accordion row 4-->
+        <div class="col-lg-12"><!-- IDEA: head of accordion col-->
+          <div class="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bolder" style="color:#2f1c6a;background-color:#fff; font-size:21px; line-height:29.4px;" type="button" data-bs-toggle="collapse" data-bs-target="#forth">What are other great control panels for website hosting?</button>
+              </h2>
+              <div class="accordion-collapse collapse show" id="forth"><!-- IDEA: accordion body container -->
+                <div class="accordion-body"><!-- IDEA: accordion body -->
+                  <p>There are countless control panel providers in the market all trying to achieve the same thing - simplify the web hosting experience for the end-user. Since every hosting provider is different, it’s up to you to conduct a little research in finding what they support and whether it falls in line with the things you want.</p>
+                </div><!-- IDEA: end off accordion body -->
+              </div><!-- IDEA: end of accordion body container -->
+
+            </div><!-- IDEA: accordion item -->
+          </div> <!-- IDEA: accordion -->
+        </div><!-- IDEA: end of accordion col -->
+      </div><!-- IDEA: end of accordion row 4 -->
+
+      <div class="row my-3"> <!-- IDEA: head of accordion row 5-->
+        <div class="col-lg-12"><!-- IDEA: head of accordion col-->
+          <div class="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bolder" style="color:#2f1c6a;background-color:#fff; font-size:21px; line-height:29.4px;" type="button" data-bs-toggle="collapse" data-bs-target="#fifth">Do I get a free domain name with cPanel Linux hosting?</button>
+              </h2>
+              <div class="accordion-collapse collapse show" id="fifth"><!-- IDEA: accordion body container -->
+                <div class="accordion-body"><!-- IDEA: accordion body -->
+                  <p>Annual and longer plans do include a free domain name, meaning you can get all the required elements to publish your website in a few clicks. Don’t worry, we got you covered.</p>
+                </div><!-- IDEA: end off accordion body -->
+              </div><!-- IDEA: end of accordion body container -->
+
+            </div><!-- IDEA: accordion item -->
+          </div> <!-- IDEA: accordion -->
+        </div><!-- IDEA: end of accordion col -->
+      </div><!-- IDEA: end of accordion row 5 -->
+
+      <div class="row my-3"> <!-- IDEA: head of accordion row 6-->
+        <div class="col-lg-12"><!-- IDEA: head of accordion col-->
+          <div class="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bolder" style="color:#2f1c6a;background-color:#fff; font-size:21px; line-height:29.4px;" type="button" data-bs-toggle="collapse" data-bs-target="#sixth">Why buy a cPanel hosting plan at Hostinger?</button>
+              </h2>
+              <div class="accordion-collapse collapse show" id="sixth"><!-- IDEA: accordion body container -->
+                <div class="accordion-body"><!-- IDEA: accordion body -->
+                  <p>As great as cPanel is, it wouldn’t carry any value without a knowledgeable, qualified and skilled team behind you. Hostinger has been maturing in the website hosting space since 2004, amassing over 15 years of experience and wisdom. Our prices are echoing your needs and wants, and the quality of our products has helped us reach over 29 million users to date.</p>
+                </div><!-- IDEA: end off accordion body -->
+              </div><!-- IDEA: end of accordion body container -->
+
+            </div><!-- IDEA: accordion item -->
+          </div> <!-- IDEA: accordion -->
+        </div><!-- IDEA: end of accordion col -->
+      </div><!-- IDEA: end of accordion row 6 -->
+
+      <div class="row my-3"> <!-- IDEA: head of accordion row 7-->
+        <div class="col-lg-12"><!-- IDEA: head of accordion col-->
+          <div class="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bolder" style="color:#2f1c6a;background-color:#fff; font-size:21px; line-height:29.4px;" type="button" data-bs-toggle="collapse" data-bs-target="#seventh">Do I get customers’ support help with cPanel hosting?</button>
+              </h2>
+              <div class="accordion-collapse collapse show" id="seventh"><!-- IDEA: accordion body container -->
+                <div class="accordion-body"><!-- IDEA: accordion body -->
+                  <p>Of course. It goes without saying that our team is always available and ready to answer any question you might have. Our customer support responses within a few minutes. You simply ask the question and we’ll come back to you with a solution in no time. We are available 24/7/365.</p>
+                </div><!-- IDEA: end off accordion body -->
+              </div><!-- IDEA: end of accordion body container -->
+
+            </div><!-- IDEA: accordion item -->
+          </div> <!-- IDEA: accordion -->
+        </div><!-- IDEA: end of accordion col -->
+      </div><!-- IDEA: end of accordion row 7 -->
+
+      <div class="row my-3"> <!-- IDEA: head of accordion row 8-->
+        <div class="col-lg-12"><!-- IDEA: head of accordion col-->
+          <div class="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bolder" style="color:#2f1c6a;background-color:#fff; font-size:21px; line-height:29.4px;" type="button" data-bs-toggle="collapse" data-bs-target="#eighth">Do I get a cPanel license when buying cPanel shared hosting?</button>
+              </h2>
+              <div class="accordion-collapse collapse show" id="eighth"><!-- IDEA: accordion body container -->
+                <div class="accordion-body"><!-- IDEA: accordion body -->
+                  <p>No, you do not get a cPanel license. You should purchase a cPanel license from cpanel.net if you want to use it on your shared hosting or VPS.</p>
+                </div><!-- IDEA: end off accordion body -->
+              </div><!-- IDEA: end of accordion body container -->
+
+            </div><!-- IDEA: accordion item -->
+          </div> <!-- IDEA: accordion -->
+        </div><!-- IDEA: end of accordion col -->
+      </div><!-- IDEA: end of accordion row 8 -->
+
+
+    </div> <!-- IDEA: end of accordion container -->
+
+    <!-- footer -->
+    <div class="container-lg my-5">
+      <div class="row" id="host">
+        <div class="col-lg mb-5">
+
+          <img style="width:100%; height: 1.7rem ;" src="hostinger/Hostinger-900x0.png" alt="Hostinger">
+          <p class="py-2"style="font-size: 14px; line-height: px; color: #2f1c6a;">We are a web hosting provider on a mission to bring success to everyone who goes online.We do it by constantly improving server technology, providing professional support, and making the web hosting experience seamless.</p>
+          <img src="hostinger/visa-5d68dadf24.webp" alt="">
+          <img src="hostinger/mastercard-ca75c7f8d3.webp" alt="">
+          <img src="hostinger/amex-3bde454827.webp" alt="">
+          <img src="hostinger/discover-1e5edf3f39.webp" alt="">
+          <img src="hostinger/jcb-221f9eb145.webp" alt="">
+          <img src="hostinger/maestro-6356d16217.webp" alt="">
+          <img src="hostinger/dinersclub-3f02e2deec.webp" alt="">
+          <a class="mb-5"href="#">And More</a>
+        </div>
+        <div class="col-lg">
+          <h6 style="font-size: 18px; line-height: 27px; color: rgb(47, 28, 105);">HOSTING</h6>
+          <ul class="nav flex-column text-start" >
+            <li class="nav-item"><a href="#" class="nav-link">Web Hosting</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">VPS Hosting</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Minecraft Server Hosting</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">CyberPanel Hosting</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Cloud Hosting</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">WordPress Hosting</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Email Hosting</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">CMSHosting</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Ecommerce Hosting</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Free Website Hosting</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Online Store</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Website Builder</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Buy Hosting</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Hosting for Agencies</a></li>
+          </ul>
+        </div>
+        <div class="col-lg">
+          <h6 style="font-size: 18px; line-height: 27px; color: #2f1c6a;">DOMAIN</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a href="#" class="nav-link">Free Domain</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">XYZ Domain</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Cheap Domain Names</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Domain Extensions</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">WHOIS Lookup</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Free SSL Certificate</a></li>
+          </ul>
+          <h6 style="font-size: 18px; line-height: 27px; color: #2f1c6a;">HELP</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a href="#" class="nav-link">Tutorials</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Knowledge Base</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Report Abuse</a></li>
+          </ul>
+        </div>
+        <!-- <div class="col-lg-1">
+          <h6 class="text-center" style="font-size: 18px; line-height: 27px; color: #2f1c6a;">HELP</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a href="#" class="nav-link">Tutorials</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Knowledge Base</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Report Abuse</a></li>
+          </ul>
+        </div> -->
+        <div class="col-lg">
+          <h6  style="font-size: 18px; line-height: 27px; color: #2f1c6a;">INFORMATION</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a href="#" class="nav-link">Migrate to Hostinger</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">System Status</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Affiliate Program</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Payment Methods</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Wall of Fame</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Reviews</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Sitemap</a></li>
+            </ul>
+        </div>
+        <div class="col-lg">
+          <h6  style="font-size: 18px; line-height: 27px; color: #2f1c6a;">COMPANY</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a href="#" class="nav-link">Our Technology</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Career</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Newsroom</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Roadmap</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Student Discount</a></li>
+          </ul>
+          <h6  style="font-size: 18px; line-height: 27px; color: #2f1c6a">LEGAL</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a href="#" class="nav-link">Privacy Policy</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Terms of Service</a></li>
+          </ul>
+        </div>
+        <!-- <div class="col-lg-1">
+          <h6 class="text-center" style="font-size: 18px; line-height: 27px; color: #2f1c6a">LEGAL</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a href="#" class="nav-link">Privacy Policy</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Terms of Service</a></li>
+          </ul>
+        </div> -->
+      </div>
+      <div class="row mt-3">
+        <div class="col-lg-8">
+
+        </div>
+        <div class="col-lg-4">
+          <a href="#" ><i class="bi bi-twitter p-2  rounded-circle" style="background: #2f1c6a;"></i></a>
+          <a href="#" ><i class="bi bi-linkedin p-2 border rounded-circle" style="background: #2f1c6a;"></i></a>
+          <a href="#" ><i class="bi bi-instagram p-2  rounded-circle" style="background: #2f1c6a;"></i></a>
+          <a href="#" ><i class="bi bi-facebook p-2  rounded-circle" style="background: #2f1c6a;"></i></a>
+          <a href="#" ><i class="bi bi-youtube p-2  rounded-circle" style="background: #2f1c6a;"></i></i></a>
+        </div>
+      </div>
+      <div class="row border-top mt-4 mb-1">
+        <marquee style="color:red; font-size: 1.5rem;" class="fw-bolder " behavior="" direction="">CAVEAT:This is a student Project and not an attempt to clone the existing web page</marquee>
+        <div class="col-lg-8 mt-5 mb-1">
+          <p style="font-size: 14px; color: gray;">© 2004-2022 hostinger.com - Premium Web Hosting, Cloud, VPS & Domain Registration Services.</p>
+        </div>
+        <div class="col-lg-4 mt-5 mb-1">
+          <p style="font-size: 14px; color: gray;">Prices are listed without VAT</p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
