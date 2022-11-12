@@ -76,6 +76,17 @@
     #last a:hover{
       text-decoration: underline;
     }
+
+    .forms-control.success input{
+      border-color:#2ecc71;
+    }
+    .forms-control.error input{
+      border-color:#e74e3c;
+    }
+    .forms-control.error small{
+      color:#e74e3c;
+    }
+
   </style>
 </head>
 <body>
@@ -105,12 +116,13 @@
           <div class="offcanvas-body" id="off">
 
                 <li class="navbar-item"><a class="nav-link" href="valuemax.html">ValueMax</a></li>
-                <li class="navbar-item"><a class="nav-link" href="#">Dell</a></li>
+
                 <li class="navbar-item me-4"><a class="nav-link" href="meta.html">Meta</a></li>
                 <li class="navbar-item"><a class="nav-link" href="smile.html">Smile</a></li>
                 <li class="navbar-item"><a class="nav-link" href="hostinger.html">Hostinger</a></li>
                 <li class="navbar-item me-4"><a class="nav-link" href="asana.html">Asana</a></li>
                 <li class="navbar-item me-5"><a class="nav-link" href="index.html">NYSCCBO</a></li>
+                <li class="navbar-item"><a class="nav-link" href="dell.html">Dell</a></li>
 
 
           </div>
@@ -410,26 +422,30 @@
       <div class="row justify-content-center align-items-center" style="padding:3.7rem;">
         <p class="fw-bolder" style="font-size:60px; font-family:serif; line-height:82px; color:#fff;">Request a callback</p>
         <p style="font-size:16px;  line-height:19px; color:#e5f6ff;">Schedule a call today and one of our experts will be happy to help you decide which professional service is ideal for your business <br>and budget.</p>
+
         <div class="col-lg-12 justify-content-center align-items-center">
-          <form action="">
+          <form name="form" id="form" action="">
             <div class="row my-5">
-              <div class="col-lg-6">
+              <div class="col-lg-6 forms-control">
                 <label style="font-size:22px; line-height:26px; color:#fff;" for="firstName" class="form-label fw-bold my-4">First Name</label> <br>
-                <input type="text" class="form-input" placeholder="Jane">
+                <input name="firstName" id="firstName"  type="text" class="form-input" placeholder="Jane">
+                <small></small>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-6 forms-control">
                 <label style="font-size:22px; line-height:26px; color:#fff;" for="lastName" class="form-label fw-bold my-4">Last Name</label> <br>
-                <input type="text" class="form-input" placeholder="Doe">
+                <input name="lastName" id="lastName" type="text" class="form-input" placeholder="Doe">
+                <small></small>
               </div>
             </div>
             <div class="row my-5">
-              <div class="col-lg-6">
+              <div class="col-lg-6 forms-control">
                 <label style="font-size:22px; line-height:26px; color:#fff;" for="phone" class="form-label fw-bold my-4">Phone Number</label> <br>
-                <input type="text" class="form-input" placeholder="### ### ###">
+                <input name="phone" id="phone" type="text" class="form-input" placeholder="### ### ###">
+                <small></small>
               </div>
               <div class="col-lg-6">
                 <label style="font-size:22px; line-height:26px; color:#fff;" for="" class="form-label fw-bold my-4">Best time to call</label>
-                <select name="time" id="" class="form-select">
+                <select name="time" id="time" class="form-select" >
                   <option value="1" selected>Select Time</option>
                   <option value="2">Morning</option>
                   <option value="3">Afternoon</option>
@@ -439,13 +455,14 @@
             </div>
 
             <div class="row my-5">
-              <div class="col-lg-6">
+              <div class="col-lg-6 forms-control">
                 <label style="font-size:22px; line-height:26px; color:#fff;" for="email" class="form-label fw-bold my-4">Email address</label><br>
-                <input type="text" class="form-input" placeholder="jane.doe@example.com">
+                <input name="email" id="email" type="text" class="form-input" placeholder="jane.doe@example.com">
+                <small></small>
               </div>
               <div class="col-lg-6">
                 <label for="" class="form-label fw-bold my-4" style="font-size:22px; line-height:26px; color:#fff;">What service are you interested in</label>
-                <select name="time" id="" class="form-select">
+                <select name="service" id="service" class="form-select">
                   <option value="1" selected>I'm not sure yet</option>
                   <option value="2">Ongoing full-service website management</option>
                   <option value="3">SEO optimization services</option>
@@ -457,7 +474,7 @@
 
             <div class="row my-5">
               <div class="col-lg-6">
-                <button class="btn btn-lg btn-primary">Send Request</button>
+                <button type="submit" class="btn btn-lg btn-primary">Send Request</button>
               </div>
             </div>
           </form>
@@ -547,5 +564,47 @@
 
   <marquee behavior="" direction="">CAVEAT: This is a student project and not an attempt to clone th existing website.</marquee>
 
+  <script>
+    const form = document.getElementById('form');
+    const firstName = document.getElementById('firstName');
+    const lastName = document.getElementById('lastName');
+    const phone = document.getElementById('phone');
+    const email = document.getElementById('email');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      validate();
+    });
+
+    function validate() {
+      const firstNameValue = firstName.value.trim();
+      const lastNameValue = lastName.value.trim();
+      const phoneValue = phone.value.trim();
+      const emailValue = email.value.trim();
+
+      if(firstName === '') {
+        setErrorFor(firstName, 'First Name cannot be blank');
+      }else {
+        setSuccessFor(firstName);
+      }
+
+    }
+
+    function setErrorFor(input, message) {
+      const formControl = input.parentElement;
+      const small = formsControl.querySelector('small');
+
+      small.innerText;
+
+      formControl.className = 'forms-control error';
+    }
+
+    function setSuccessFor(input) {
+      const formControl = input.parentElement;
+
+      formControl.className = 'forms-control success';
+    }
+  </script>
 </body>
 </html>

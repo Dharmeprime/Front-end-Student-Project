@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DELL</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+
+
+    }
+    #span-cord{
+      display: flex;
+      justify-content: space-between;
+    }
+    .over{
+      font-size: 16px;
+      color: #111111;
+      /* border: 0; */
+    }
+    .over:hover{
+      color:#111111;
+      font-weight: 550;
+    }
+    #myTab{
+      /* border:  ; */
+    }
+    #last a:link, #last a:visited{
+      font-size: 14px;
+      color:#636363;
+    }
+    #last a:hover{
+      text-decoration: underline;
+    }
+    #last{
+      padding: 3rem;
+    }
+    @media screen and (max-width:960px){
+      .over-par{
+        padding: 4rem 2rem;
+      }
+      .over{
+        font-size: 10px;
+        padding: 3px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light" id="product" >
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img style="width:30%; " src="dell/Dell_Technologies-Logo.wine.png" alt="Smile"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-start" id="offcanvas">
+        <div class="offcanvas-header" >
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body justify-content-center" >
+          <ul class="navbar-nav pt-3">
+              <li class="navbar-item"><a class="nav-link" href="smile.html">Smile</a></li>
+              <li class="navbar-item"><a class="nav-link" href="hostinger.html">Hostinger</a></li>
+              <li class="navbar-item"><a class="nav-link" href="bluehost.html">BlueHost</a></li>
+              <li class="navbar-item"><a class="nav-link" href="asana.html">Asana</a></li>
+              <li class="navbar-item"><a class="nav-link" href="index.html">NYSCCBO</a></li>
+              <li class="navbar-item"><a class="nav-link" href="meta.html">Meta</a></li>
+              <li class="navbar-item"><a class="nav-link" href="valuemax.html">ValueMax</a></li>
+
+          </ul>
+
+        </div>
+
+
+      </div>
+    </div>
+  </nav>
+  <!-- end of navbar -->
+
+
+  <div class="container-fluid mt-5" style="position:relative;">
+    <div class="d-none d-xl-block d-xxl-none">
+        <img src="dell/ips-hero-image-desktop.jpg" alt="" style="width:100%;">
+    </div>
+    <div class="container-md bg-light"  style="box-shadow: 0px 0px 20px grey;">
+      <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+          <img src="dell/cpu.jpg" alt="" style="width:40%;">
+          <span style="font-size:28px; color:##111111; ">OptiPlex GX520</span>
+        </div>
+        <div class="col-lg-4"></div>
+
+      </div>
+      <div class="row">
+        <div class="col-lg-5"></div>
+        <div class="col-lg-2">
+          <a href="#" style="font-size:14px;">Change Product</a>
+        </div>
+
+        <div class="col-lg-5"></div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container-fluid mt-5 over-par" style="background:#F8F8F8; padding:4rem 6rem;">
+    <div class="row justify-content-center align-item-center">
+      <div class="col-lg-12">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active over" id="home-tab" data-bs-toggle="tab" data-bs-target="#overview" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Overview</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link over" id="profile-tab" data-bs-toggle="tab" data-bs-target="#diagnostics" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Diagnostics</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link over" id="contact-tab" data-bs-toggle="tab" data-bs-target="#drivers" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Drivers & Downloads</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link over" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#documentation" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Documentation</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link over" id="contact-tab" data-bs-toggle="tab" data-bs-target="#service" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Service Events</button>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+              <div class="row my-5">
+                <div class="col-lg-9">
+                  <div class="p-3 border border-primary  mb-5" style="background:#F0FAFD;">
+                    <span class="mt-3 col-lg-9" style="font-size: 14px; color:#444444;"><strong style="font-size: 18px; color:#111111;">Access support customized for your product</strong><br>Enter your Service Tag to view warranty status, system details, and more. </span>
+                    <a href="#" class="btn btn-primary  col-lg-3" style="font-size: 16px; color:#fff; border-radius: 0;">Enter Service Tag</a>
+                  </div>
+
+                  <div class="row">
+                      <h5 style="font-size: 24px; color:#111111; margin-bottom:20px;">More resources</h5>
+                    <div class="col-lg-4 text-center">
+
+                      <div class="card my-4" style="width: 15rem;">
+                        <!-- <img src="..." class="card-img-top" alt="..."> -->
+                        <div class="card-body">
+                          <i class="bi bi-camera-reels-fill" style="font-size:1.8rem;"></i>
+                          <h5 class="card-title fw-bold" style="font-size: 16px; color:#111111;">Support videos</h5><br>
+                          <p class="card-text" style="font-size: 16px; color:#444444;">Support and tutorial videos created by Dell to help you troubleshoot both simple and complex issues.</p><br><br>
+                          <a href="#" class="btn btn-outline-primary">Watch Videos</a>
+                        </div>
+                      </div>
+
+                    </div><!-- IDEA: end card 1 -->
+                    <div class="col-lg-4 text-center">
+
+                      <div class="card my-4" style="width: 15rem;">
+                        <!-- <img src="..." class="card-img-top" alt="..."> -->
+                        <div class="card-body">
+                          <i class="bi bi-camera-reels-fill" style="font-size:1.8rem;"></i>
+                          <h5 class="card-title fw-bold" style="font-size: 16px; color:#111111;">Support videos</h5><br>
+                          <p class="card-text" style="font-size: 16px; color:#444444;">Support and tutorial videos created by Dell to help you troubleshoot both simple and complex issues.</p><br><br>
+                          <a href="#" class="btn btn-outline-primary">Watch Videos</a>
+                        </div>
+                      </div>
+
+                    </div><!-- IDEA: end card 2 -->
+                    <div class="col-lg-4 text-center">
+
+                      <div class="card my-4" style="width: 15rem;">
+                        <!-- <img src="..." class="card-img-top" alt="..."> -->
+                        <div class="card-body">
+                          <i class="bi bi-camera-reels-fill" style="font-size:1.8rem;"></i>
+                          <h5 class="card-title fw-bold" style="font-size: 16px; color:#111111;">Support videos</h5><br>
+                          <p class="card-text" style="font-size: 16px; color:#444444;">Support and tutorial videos created by Dell to help you troubleshoot both simple and complex issues.</p><br><br>
+                          <a href="#" class="btn btn-outline-primary">Watch Videos</a>
+                        </div>
+                      </div>
+
+                    </div><!-- IDEA: end card 3 -->
+
+
+                  </div><!-- IDEA: end of row containing cards -->
+
+                </div><!-- IDEA: end of overview column 9 -->
+
+
+
+
+                <div class="col-lg-3 ">
+                  <div class="card mb-3" style="width: 15rem;">
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-size:18px; color:#111111;">Quick Links</h5>
+                      <p class="card-text">
+                        <ul class="nav" style="font-size:16px;">
+                          <li class="nav-item"><a href="#">Identify your product</a></li>
+                          <li class="nav-item"><a href="#">Support service and ownership transfer</a></li>
+                        </ul>
+
+                      </p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 15rem;">
+                    <img src="dell/chat540x340.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title" style="ont-size:16px; color:#444444;">Need to contact us?</h5><br>
+                      <p class="card-text" style="ont-size:16px; color:#111111;">We can help troubleshoot issues and check the status of open dispatches.</p><br>
+                      <a href="#" class="btn btn-outline-primary">Contact Technical support</a>
+                    </div>
+                  </div>
+
+                </div> <!-- IDEA: end overview column 3 -->
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="diagnostics" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+              <span class="px-3 py-2 mt-5" style="background:#408001; color:#fff; display:inline-block; font-size:12px;">Recommended</span>
+
+              <div class="row mb-5" style="background-color:#F1F5EB; border: 1px solid #408001;">
+                <div class="col-lg-10 p-5">
+                  <h3 class="fw-bold" style="font-size:24px; color:#111111;">Let's test your PC for common hardware issues</h3>
+                  <p style="font-size:16px; color:#444;">The Quick Test finds the most common problems and tells you how to fix them.</p>
+                  <a href="#">Learn More</a>
+                </div>
+                <div class="col-lg-2 py-5">
+                  <button class="btn btn-primary">Run Quick Test</button>
+                  <p class="text-center">10 minutes</p>
+                </div>
+
+
+              </div>
+
+              <div class="row mb-5" style="border: 1px solid grey;">
+                <div class="col-lg-10 p-5">
+                  <h5  class="fw-bold" style="font-size:24px; color:#111111;">Choose a different test.</h5>
+                  <span style="font-size:24px; color:#111111;">Full Text</span>
+                  <p style="font-size:16px; color:#444;">The Full Test thoroughly analyzes your PC and can detect hardware problems. <a href="#">Learn more</a> </p>
+                </div>
+                <div class="col-lg-2 py-5">
+                  <button class="btn btn-outline-primary">Run Full Test</button>
+                  <p class="text-center" style="font-size:14px; color:#707070;">10 minutes</p>
+                </div>
+
+                <div style="border-top: 1px solid grey;">
+                  <p style="font-size:20px; color:#111111;">Custom Component Test</p>
+                  <p style="font-size:16px; color:#111111;">Custom Component Test</p>
+
+                </div>
+
+
+              </div> <!-- IDEA: end of row -->
+
+              <div class="row">
+                <div class="col-lg-12 py-5">
+                  <h5 style="font-size:24px; color:#111111;">Additional resources</h5>
+                  <a href="#">Preboot Diagnostics</a>
+                  <p style="font-size:16px; color:#444;">If Windows won’t start but your PC turns on, you can run preboot diagnostics to test your hardware outside of the operating system. If a problem is found, you can look up the error codes for more information.</p>
+                </div>
+              </div>
+
+
+
+            </div>
+
+
+            <div class="tab-pane fade" id="drivers" role="tabpanel" aria-labelledby="contact-tab" tabindex="0" >
+              <div class="row mb-5 mt-5" style="background:#F4F4F4;">
+                <div class="col-lg-12 p-5">
+                  <form action="">
+                    <div class="row mb-4">
+                      <div class="col-lg-6">
+                        <label for="" class="form-label fw-bold">Keyword</label>
+                        <input type="text" class="form-control" placeholder="Enter a a driver name or keyword">
+                      </div>
+                      <div class="col-lg-6">
+                        <label for="" class="form-label fw-bold">Operating System</label>
+                        <select name="OS" id="" class="form-select">
+                          <option value="1">BIOS</option>
+                          <option value="2">Not Applicable</option>
+                          <option value="3">Windows 2000</option>
+                          <option value="4">Windows XP</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row" style="background:#F4F4F4;">
+                      <div class="col-lg-6">
+                        <label for="" class="form-label fw-bold">Download Type</label>
+                        <select name="companySize" id="" class="form-select">
+                          <option value="1"><label for="" class="form-label">All</label></option>
+                          <option value="2">1-14</option>
+                          <option value="3">15-49</option>
+                          <option value="4">50-99</option>
+                          <option value="5">100-499</option>
+                          <option value="6">500-1999</option>
+                          <option value="7">2000+</option>
+                        </select>
+                      </div>
+                      <div class="col-lg-6">
+                        <label for="" class="form-label fw-bold">Category</label>
+                        <select name="OS" id="" class="form-select">
+                          <option value="1">BIOS</option>
+                          <option value="2">Not Applicable</option>
+                          <option value="3">Windows 2000</option>
+                          <option value="4">Windows XP</option>
+                        </select>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+              </div><!-- IDEA: form row -->
+
+              <div class="row" style="background:#F4F4F4;border-left: 8px solid #41B6E6;">
+                <strong>This is a comprehensive list of all available downloads for your OptiPlex GX520</strong>
+                <p>Some downloads may already exist on your device. Select “This Device” to view and manually install available downloads specific to your device’s unique identifier. (<a href="#">Show me how</a>).</p>
+              </div>
+
+            </div><!-- IDEA: end of driver and downloads -->
+
+            <div class="tab-pane fade" id="documentation" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+              <div class="row my-5 p-4" style="border:1px solid gray;">
+                <div class="col-lg-12">
+                  <h3 style="font-size:28px; color:#111111;">Search OptiPlex GX520 Support Information</h3>
+                  <p style="font-size:20px; color:#444444;">Find articles, manuals and more to help support your product.</p>
+                  <input style="width:15rem;" type="text" class="form-control" placeholder="What can we help you to find?">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-4">
+                  <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+                    <nav class="nav nav-pills flex-column">
+                      <a class="nav-link fw-bold" href="#item-1" style="font-size:16px; color:#707070;">Top Solutions</a>
+                      <a class="nav-link  fw-bold" href="#item-2" style="font-size:16px; color:#707070;">Manuals and Documents</a>
+                      <a class="nav-link fw-bold" href="#item-3" style="font-size:16px; color:#707070;">Rgulatory Information</a>
+                      <a class="nav-link fw-bold" href="#item-4" style="font-size:16px; color:#707070;">Videos</a>
+                    </nav>
+                  </nav>
+                </div>
+                <div class="col-lg-8">
+                  <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0" style="overflow-y:scroll;  height:700px;">
+                    <div id="item-1">
+                      <h3 style="font-size:24px; color:#111111;">Top Solutions</h3>
+                      <div class="accordion">
+                        <div  class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button fw-bolder" style="color:#111111;background-color:#f4f4f4; font-size:16px; border-left:2px solid #006bbd;" type="button" data-bs-toggle="collapse" data-bs-target="#first">What is cPanel hosting?</button>
+                          </h2>
+                          <div class="accordion-collapse collapse " id="first"><!-- IDEA: accordion body container -->
+                            <div class="accordion-body"><!-- IDEA: accordion body -->
+                              <p>cPanel is a management platform that acts as the control center for all activities related to the hosting experience. From creating FTP users and email addresses to adding more domains and creating MySQL databases, cPanel offers an abundance of choices, options, and features that grant you absolute control over the web hosting experience.</p>
+                            </div><!-- IDEA: end off accordion body -->
+                          </div><!-- IDEA: end of accordion body container -->
+
+                        </div><!-- IDEA: accordion item -->
+                      </div> <!-- IDEA: accordion -->
+                      <div class="accordion">
+                        <div  class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button fw-bolder" style="color:#111111;background-color:#f4f4f4; font-size:16px; border-left:2px solid #006bbd;" type="button" data-bs-toggle="collapse" data-bs-target="#second">What is cPanel hosting?</button>
+                          </h2>
+                          <div class="accordion-collapse collapse " id="second"><!-- IDEA: accordion body container -->
+                            <div class="accordion-body"><!-- IDEA: accordion body -->
+                              <p>cPanel is a management platform that acts as the control center for all activities related to the hosting experience. From creating FTP users and email addresses to adding more domains and creating MySQL databases, cPanel offers an abundance of choices, options, and features that grant you absolute control over the web hosting experience.</p>
+                            </div><!-- IDEA: end off accordion body -->
+                          </div><!-- IDEA: end of accordion body container -->
+
+                        </div><!-- IDEA: accordion item -->
+                      </div> <!-- IDEA: accordion -->
+                      <div class="accordion">
+                        <div  class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button fw-bolder" style="color:#111111;background-color:#f4f4f4; font-size:16px; border-left:2px solid #006bbd;" type="button" data-bs-toggle="collapse" data-bs-target="#third">What is cPanel hosting?</button>
+                          </h2>
+                          <div class="accordion-collapse collapse " id="third"><!-- IDEA: accordion body container -->
+                            <div class="accordion-body"><!-- IDEA: accordion body -->
+                              <p>cPanel is a management platform that acts as the control center for all activities related to the hosting experience. From creating FTP users and email addresses to adding more domains and creating MySQL databases, cPanel offers an abundance of choices, options, and features that grant you absolute control over the web hosting experience.</p>
+                            </div><!-- IDEA: end off accordion body -->
+                          </div><!-- IDEA: end of accordion body container -->
+
+                        </div><!-- IDEA: accordion item -->
+                      </div> <!-- IDEA: accordion -->
+                      <div class="accordion">
+                        <div  class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button fw-bolder" style="color:#111111;background-color:#f4f4f4; font-size:16px; border-left:2px solid #006bbd;" type="button" data-bs-toggle="collapse" data-bs-target="#forth">What is cPanel hosting?</button>
+                          </h2>
+                          <div class="accordion-collapse collapse " id="forth"><!-- IDEA: accordion body container -->
+                            <div class="accordion-body"><!-- IDEA: accordion body -->
+                              <p>cPanel is a management platform that acts as the control center for all activities related to the hosting experience. From creating FTP users and email addresses to adding more domains and creating MySQL databases, cPanel offers an abundance of choices, options, and features that grant you absolute control over the web hosting experience.</p>
+                            </div><!-- IDEA: end off accordion body -->
+                          </div><!-- IDEA: end of accordion body container -->
+
+                        </div><!-- IDEA: accordion item -->
+                      </div> <!-- IDEA: accordion -->
+                      <div class="accordion">
+                        <div  class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button fw-bolder" style="color:#111111;background-color:#f4f4f4; font-size:16px; border-left:2px solid #006bbd;" type="button" data-bs-toggle="collapse" data-bs-target="#fifth">What is cPanel hosting?</button>
+                          </h2>
+                          <div class="accordion-collapse collapse " id="fifth"><!-- IDEA: accordion body container -->
+                            <div class="accordion-body"><!-- IDEA: accordion body -->
+                              <p>cPanel is a management platform that acts as the control center for all activities related to the hosting experience. From creating FTP users and email addresses to adding more domains and creating MySQL databases, cPanel offers an abundance of choices, options, and features that grant you absolute control over the web hosting experience.</p>
+                            </div><!-- IDEA: end off accordion body -->
+                          </div><!-- IDEA: end of accordion body container -->
+
+                        </div><!-- IDEA: accordion item -->
+                      </div> <!-- IDEA: accordion -->
+
+                    </div><!-- IDEA: end of item 1 -->
+
+                    <div id="item-2">
+                      <h3 class="mt-5" style="font-size:24px; color:#111111;">Manuals and Documents</h3>
+                      <div class="accordion">
+                        <div  class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button fw-bolder" style="color:#111111;background-color:#f4f4f4; font-size:16px; border-left:2px solid #006bbd;" type="button" data-bs-toggle="collapse" data-bs-target="#sixth">What is cPanel hosting?</button>
+                          </h2>
+                          <div class="accordion-collapse collapse " id="sixth"><!-- IDEA: accordion body container -->
+                            <div class="accordion-body"><!-- IDEA: accordion body -->
+                              <p>cPanel is a management platform that acts as the control center for all activities related to the hosting experience. From creating FTP users and email addresses to adding more domains and creating MySQL databases, cPanel offers an abundance of choices, options, and features that grant you absolute control over the web hosting experience.</p>
+                            </div><!-- IDEA: end off accordion body -->
+                          </div><!-- IDEA: end of accordion body container -->
+
+                        </div><!-- IDEA: accordion item -->
+                      </div> <!-- IDEA: accordion -->
+                      <div class="accordion">
+                        <div  class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button fw-bolder" style="color:#111111;background-color:#f4f4f4; font-size:16px; border-left:2px solid #006bbd;" type="button" data-bs-toggle="collapse" data-bs-target="#seventh">What is cPanel hosting?</button>
+                          </h2>
+                          <div class="accordion-collapse collapse " id="seventh"><!-- IDEA: accordion body container -->
+                            <div class="accordion-body"><!-- IDEA: accordion body -->
+                              <p>cPanel is a management platform that acts as the control center for all activities related to the hosting experience. From creating FTP users and email addresses to adding more domains and creating MySQL databases, cPanel offers an abundance of choices, options, and features that grant you absolute control over the web hosting experience.</p>
+                            </div><!-- IDEA: end off accordion body -->
+                          </div><!-- IDEA: end of accordion body container -->
+
+                        </div><!-- IDEA: accordion item -->
+                      </div> <!-- IDEA: accordion -->
+
+                    </div><!-- IDEA: end of item 2 -->
+                    <div id="item-3">
+                      <h3 class="mt-5" style="font-size:24px; color:#111111;">Regulatory Information</h3>
+
+                    </div><!-- IDEA: end of item 3 -->
+                    <div id="item-4">
+                      <h3 class="mt-5" style="font-size:24px; color:#111111;">Videos</h3>
+
+                    </div><!-- IDEA: end of item 4 -->
+
+                  </div> <!-- IDEA: end of scrollspy -->
+
+                </div> <!-- IDEA: end of column 8 -->
+
+              </div><!-- IDEA:end of scrollspy row with accordion -->
+
+
+            </div><!-- IDEA: end of documentation -->
+
+
+            <div class="tab-pane fade " id="service" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+              <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                  <form class="mt-5" action="" style="border: 1px solid grey;  margin: 0px auto; padding: 3rem;">
+                    <p>To view your Service Events for this product, please enter your Service Tag and email. (<a href="#">Show me how</a>). <br>Can't find it? <a href="#">Detect your PC</a> </p>
+                    <label for="" class="form-label">Service Tag</label>
+                    <input type="text" class="form-control">
+                    <label for="" class="form-label">Email</label>
+                    <input type="Email" class="form-control">
+                    <button class="btn btn-primary mt-3">Submit</button>
+                  </form>
+                </div>
+                <div class="col-lg-4"></div>
+              </div>
+
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <div class="container-fluid" id="last" style="background-color:#f0f0f0;">
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-3">
+        <span>Support</span>
+        <ul class="nav flex-column">
+          <li class="nav-item"><a href="#" class="nav-link">Support Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact Support</a></li>
+
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <span>Connect with us</span>
+        <ul class="nav flex-column">
+          <li class="nav-item"><a href="#" class="nav-link">Community</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact us</a></li>
+
+        </ul>
+      </div>
+      <div class="col-lg-3">
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3">
+        <span>Our Offerings</span>
+        <ul class="nav flex-column">
+          <li class="nav-item"><a href="#" class="nav-link">APEX</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">solutions</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <span>Our Company</span>
+        <ul class="nav flex-column">
+          <li class="nav-item"><a href="#" class="nav-link">Who we are</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Dell Technology Capital</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Investors</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Newsroom</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Perspective</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Recycling</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">ESG &amp Impact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+          <span>Our Partners</span>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a href="#" class="nav-link">Find a partner</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">OEM Solutions</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Partner Program</a></li>
+          </ul>
+      </div>
+      <div class="col-lg-3">
+        <span>Resources</span>
+        <ul class="nav flex-column">
+          <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Dell rewards</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Events</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Glossary</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Privacy Center</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Resources library</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Trial Softwaare Downloads</a></li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <ul class="nav">
+          <li class="nav-item"><a href="#" class="nav-link">Dell.com</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Dell Technologies</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Premier</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-10">
+        <ul class="nav">
+          <li class="nav-item"><a href="#" class="nav-link">Copyright &copy 2022 Dell Inc </a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Terms &amp Conditions</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Privacy Statements</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Cookies, Ads &amp Emails</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Legal &amp Rgulatory</a></li>
+        </ul>
+      </div>
+    </div>
+    <marquee style="color:red;" behavior="" direction="">CAVEAT: This is a student project and not an attempt to clone the existing website</marquee>
+  </div>
+
+
+</body>
+</html>
