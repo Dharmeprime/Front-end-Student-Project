@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Project</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family:  sans-serif;
+      
+    }
+    body{
+      background: #CCEDFF;
+    }
+    input{
+      outline: none;
+    }
+  </style>
+
+</head>
+<body>
+  <!-- Greeting -->
+  <div class="container"> 
+    <h1 class="text-center fw-bolder"style="font-size:70px; font-family: serif; line-height:78px; color:#1d2a3b" id="greet"></h1>
+  </div>
+  
+
+  <!-- digital clock   -->
+  <!-- <p>Digital Clock</p> -->
+  
+  <div class="container justify-content-center align-center my-5" style="display: flex; letter-spacing: 1rem;">
+    <h1 class="fw-bold" id="myTime" style="font-size: 3rem;"></h1>
+  </div>
+  
+
+  <!-- loan calculator -->
+  
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 p-3">
+          <p>Loan Calculator</p>
+      
+          <form action="">
+            <input class="form-control my-3" type="text" id="loan" placeholder="loan amount">
+            <input class="form-control my-3" type="text" id="mark" placeholder="mark">
+            <select class="form-select my-3" name="" id="repay">
+              <option value="1">1 year</option>
+              <option value="2">2 year</option>
+              <option value="3">3 year</option>
+              <option value="4">4 year</option>
+              <option value="5">5 year</option>
+              <option value="6">6 year</option>
+              <option value="7">7 year</option>
+            </select>
+            <span id="myLoan"></span>
+          </form>
+          <button class="btn btn-info"  type="button" onclick="add()">Calculate</button><br><br>
+        </div>
+
+        <div class="col-lg-4 p-3">
+          <!-- simple calculator -->
+          <p>Simple Calculator</p>
+          
+          <input class="form-control my-3" type="text" id="1" placeholder="input number">
+          <span id="sign"></span>
+          <input class="form-control my-3" type="text" id="2" placeholder="input number">
+          <p>
+            =
+            <span id="ans"></span>
+          </p>
+          <button class="btn btn-sm btn-primary my-3" type="button" onclick="addition()" value="+">+</button>
+          <button class="btn btn-sm btn-primary my-3" type="button" onclick="multiplication()" value="x">x</button>
+          <button class="btn btn-sm btn-primary my-3" type="button"  onclick="division()" value="/">/</button>
+          <button class="btn btn-sm btn-primary my-3" type="button" onclick="subtraction()" value="-">-</button><br><br>
+
+        </div>
+
+        <div class="col-lg-4 p-3">
+          <!-- investment -->
+          <p>Investment Calculator</p>
+          <input class="form-control my-3" type="text" id="invest" placeholder="input amount">
+          <select class="form-select my-3" name="" id="investvalue">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+          </select>
+          <span id="return"></span>
+          <button class="btn btn-primary btn-sm my-5" onclick="invest()"> Calculate</button><br><br>
+       
+        </div>
+      </div>
+    </div>  
+
+
+   
+        <div id="mySchedule" class="p-5">
+          <h1>Add subject</h1>
+          <input class="form-control my-3 " type="text" id="input" placeholder="subject" style="width: 300px;">
+          <button class="btn btn-primary btn-small" onclick="schedule()">+add</button>
+        </div>
+        <ol id="subject">
+          
+        </ol>  
+        
+
+    <div class="container-fluid my-5">
+      <div class="row">
+        <div class="col-lg-8">
+          <h4 class="text-center">Countdown to birthday</h4>
+          <div>
+            <!-- countdown -->
+            
+            <h1 id="myCountDown"></h1>
+            <span id="merry"></span><br><br>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <h4 class="text-start">Exam time</h4>
+          <!-- Jamb countdown -->
+          <h1>
+            <span id="minutes">00</span>
+            <span id="colon">:</span>
+            <span id="seconds">00</span>
+          </h1>
+            
+            <button class="btn btn-primary btn-small"  id="startbtn" >start</button>
+            <button class="btn btn-primary btn-small" id="pausebtn" style="display:none">Pause</button>
+            <button class="btn btn-primary btn-small" id="resetbtn">Reset</button>
+
+        </div>
+      </div>
+    </div>
+    
+     
+
+    
+
+    
+      <!-- guess
+      <h1 class="title" id="title1">APPLICATION FORM</h1>
+      <input class="add form-control">
+      <button class="btn btn-sm btn-primary"> CHECK </button>
+    
+      <h1 class="message">check if correct..... </h1>
+     -->
+         
+  <script>
+    // Greeting
+      let hour = new Date().getHours();
+      let greet = document.getElementById('greet');
+      if(hour < 12) {
+        greet.innerHTML='Ekaaro Ologi de o';
+      }else if(hour >=12 && hour < 17) {
+        greet.innerHTML='Ekasan alagbado nki yin o ';
+        greet.style.color ='#04756f'
+      }else{
+        greet.innerHTML='Good Night';
+      }
+          
+
+    // Digital Clock
+    function digitalClock() {
+      let hh = new Date().getHours();
+      let mm = new Date().getMinutes();
+      let ss = new Date().getSeconds();
+
+      let session = 'AM';
+
+      if(hh==0){
+        hh = 12;
+      }
+      if(hh > 12) {
+        hh = hh - 12;
+        session = 'PM';
+      }
+      hh = (hh < 10)? '0' + hh: hh;
+      mm = (ss < 10)? '' + mm: mm;
+      ss = (ss < 10)? '0' + ss: ss;
+      let time = `${hh} : ${mm} : ${ss} ${session}`;
+
+      document.getElementById('myTime').innerHTML = time;
+      setTimeout(digitalClock, 1000);
+    }
+
+    digitalClock();
+
+    // loan calculator
+    function add(){
+      let a = Number(document.getElementById('loan').value);
+      let b = Number(document.getElementById('mark').value)/100;
+      let c = document.getElementById('repay').value;
+      let d = b*a;
+      let totalpay = (d+a)*c;
+      document.getElementById('myLoan').innerHTML=`The total money paid will be ${totalpay}`;
+    }
+
+    // simple calculator
+    function addition(){
+      let num1 = document.getElementById('1').value;
+      let num2 = document.getElementById('2').value;
+      let sum = Number(num1) + Number(num2);
+      document.getElementById('sign').innerHTML='+';
+      document.getElementById('ans').innerHTML= sum;
+    }
+    function multiplication(){
+      let num1 = document.getElementById('1').value;
+      let num2 = document.getElementById('2').value;
+      let multiply = Number(num1) * Number(num2);
+      document.getElementById('sign').innerHTML='x';
+      document.getElementById('ans').innerHTML= multiply;
+    }
+    function division(){
+      let num1 = document.getElementById('1').value;
+      let num2 = document.getElementById('2').value;
+      let divide = Number(num1) / Number(num2);
+      document.getElementById('sign').innerHTML='/';
+      document.getElementById('ans').innerHTML= divide;
+    }
+    function subtraction(){
+      let num1 = document.getElementById('1').value;
+      let num2 = document.getElementById('2').value;
+      let minus = Number(num1) - Number(num2);
+      document.getElementById('sign').innerHTML='-';
+      document.getElementById('ans').innerHTML= minus;
+    }
+
+    // invest
+    function invest() {
+      let a = Number(document.getElementById('invest').value);
+      let b = document.getElementById('investvalue').value;
+      let c = a*0.1;
+      let roi = c*b;
+      let ui = roi + a
+      document.getElementById('return').innerHTML = `gain ${ui}`;
+    }
+
+    // schedule
+    let schedule=function() {
+      let a = document.getElementById('mySchedule');
+      let b = document.getElementById('input').value;
+      let c = document.getElementById('subject');
+
+      let d = document.createElement('li');
+      let e = document.createTextNode(b);
+      d.appendChild(e);
+      c.appendChild(d);
+      document.getElementById('input').value;
+
+      let x = document.createElement('span');
+      let y = document.createTextNode('\u00d7')
+      x.appendChild(y);
+      x.style.backgroundColor='red';
+      x.style.color='white';
+      x.style.cursor='pointer';
+      x.className='close';
+
+      d.appendChild(x);
+
+      let f = document.getElementsByClassName('close');
+      let i;
+
+      for(i=0; i<f.length; i++){
+        f[i].onclick=function(){
+          this.parentNode.style.textDecoration='line-through'
+        }
+      }
+    }
+    document.addEventListener('keydown', function(e){
+      if(e.key==='Enter'){
+        schedule();
+      };
+    });
+
+    // countddown to birthday
+    function countDown(){
+      let targetTime = new Date('May,22 2023').getTime();
+      let currentTime= new Date().getTime();
+      let distance = targetTime-currentTime;
+      let days = Math.floor(distance/(1000*60*60*24));
+      let hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+      let minutes = Math.floor((distance%(1000*60*60))/(1000*60));
+      let seconds = Math.floor((distance%(1000*60))/1000);
+
+
+
+      if (distance<0){
+        clearInterval(x);
+        document.getElementById('merry').innerHTML='MERRY CHRISTMAS'
+      }
+      document.getElementById('myCountDown').innerHTML=`${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`
+    }
+    let x = setInterval(countDown, 1000);
+
+    // exam countdown
+    let a = 0;
+         let b = document.getElementById("seconds");
+         let c = document.getElementById("minutes");
+         let g= document.getElementById('startbtn');
+         let h = document.getElementById('pausebtn');
+         let i = document.getElementById('resetbtn');
+        
+            
+         function setTime(){
+          ++a;
+          let d = olu(a%60);
+          b.innerHTML = d;
+  
+          let r=olu(parseInt(a/60))
+          c.innerHTML = r;
+  
+  
+          if(r==10){
+            clearInterval(k);
+          }
+  
+        }
+  
+         let start = function(){
+           k= setInterval(setTime, 1000);
+        }
+  
+        let pause= function(){
+        clearInterval(k);
+        }
+  
+        let reset= function() {
+        clearInterval(k);
+        a=0;
+        b.innerHTML = "00";
+        c.innerHTML = "00";
+  
+        
+      }
+  
+        g.addEventListener('click', start );
+        h.addEventListener('click', pause );
+        i.addEventListener('click', reset );
+  
+         
+        function olu(x)
+            {
+                let kola = x + "";
+                if(kola.length < 2)
+                {
+                    return "0" + kola;
+                }
+                else
+                {
+                    return kola;
+                }
+            }
+  
+           g.onclick=function(){
+              h.style.display='inline';
+              g.style.display='none';
+          }
+  
+          h.onclick=function(){
+             g.style.display='inline';
+             h.style.display='none';
+          }
+  
+          i.onclick=function(){
+             g.style.display='inline';
+             h.style.display='none';
+          }
+     // guess my number	
+
+  
+
+  // document.querySelector('button').addEventListener('click', function(){
+
+  //   document.querySelector('.title').textContent='GUESS MY NUMBER btw 1 and 20'
+  // document.querySelector('.title').style.backgroundColor= "red";
+  // document.querySelector('.title').style.color="white";
+
+  // let a = Number(document.querySelector('.add').value);
+
+  // const answer= Math.trunc((Math.random()*20)+1);
+  // console.log(answer);
+
+  //    if(a>20){
+  //     document.querySelector('.message').textContent=`the number is more than 20`;
+  //   }
+  //   else if(a<answer){
+  //   document.querySelector('.message').textContent=`too small`;
+  //   }
+
+  //   else if(a>answer){
+  //   document.querySelector('.message').textContent=`too high`;
+  //   }
+  //   else if(a==answer){
+  //     document.querySelector('.message').textContent=`correct`;
+  //     document.querySelector('.message').style.color="white";
+  //     document.querySelector('body').style.backgroundColor= 'green';
+  //   }
+    
+  //   else{
+  //     document.querySelector('.message').textContent=`wrong prediction`;
+  //   }
+
+  // });
+
+  </script>
+</body>
+</html>
