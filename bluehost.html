@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <script defer src="./bluehost.js" charset="utf-8"></script>
   <style>
     *{
       margin: 0;
@@ -18,13 +19,7 @@
     .btn{
       border-radius: 0px;
     }
-    /* .container-fluid{
-      padding:8rem;
-    } */
-    /* #upto{
-      padding-left: 7rem; */
-      /* padding-top: 5rem; */
-    /* } */
+
     input[type=text], input[type=text]:focus{
       width:100%;
       outline: 0;
@@ -32,8 +27,8 @@
       border-bottom: 2px solid #fff;
       padding:10px 0;
       background: transparent;
-      /* font-size: 2em; */
       color:#fff;
+      display: inline-block;
     }
     .form-select{
       width:100%;
@@ -77,7 +72,7 @@
       text-decoration: underline;
     }
 
-    .forms-control.success input{
+    /* .forms-control.success input{
       border-color:#2ecc71;
     }
     .forms-control.error input{
@@ -85,7 +80,7 @@
     }
     .forms-control.error small{
       color:#e74e3c;
-    }
+    } */
 
   </style>
 </head>
@@ -424,24 +419,24 @@
         <p style="font-size:16px;  line-height:19px; color:#e5f6ff;">Schedule a call today and one of our experts will be happy to help you decide which professional service is ideal for your business <br>and budget.</p>
 
         <div class="col-lg-12 justify-content-center align-items-center">
-          <form name="form" id="form" action="">
+          <form name="form" id="forms" action="">
             <div class="row my-5">
               <div class="col-lg-6 forms-control">
-                <label style="font-size:22px; line-height:26px; color:#fff;" for="firstName" class="form-label fw-bold my-4">First Name</label> <br>
-                <input name="firstName" id="firstName"  type="text" class="form-input" placeholder="Jane">
-                <small></small>
+                <label style="font-size:22px; line-height:26px; color:#fff;" for="firstname" class="form-label fw-bold my-4">First Name</label> <br>
+                <input name="firstname" id="firstname"  type="text" class="form-input" placeholder="Jane">
+                <small style="color:#e74c3c" id="smallfn"></small>
               </div>
               <div class="col-lg-6 forms-control">
-                <label style="font-size:22px; line-height:26px; color:#fff;" for="lastName" class="form-label fw-bold my-4">Last Name</label> <br>
-                <input name="lastName" id="lastName" type="text" class="form-input" placeholder="Doe">
-                <small></small>
+                <label style="font-size:22px; line-height:26px; color:#fff;" for="lastname" class="form-label fw-bold my-4">Last Name</label> <br>
+                <input name="lastname" id="lastname" type="text" class="form-input" placeholder="Doe">
+                <small style="color:#e74c3c" id="smallln"></small>
               </div>
             </div>
             <div class="row my-5">
               <div class="col-lg-6 forms-control">
                 <label style="font-size:22px; line-height:26px; color:#fff;" for="phone" class="form-label fw-bold my-4">Phone Number</label> <br>
                 <input name="phone" id="phone" type="text" class="form-input" placeholder="### ### ###">
-                <small></small>
+                <small style="color:#e74c3c" id="smallph"></small>
               </div>
               <div class="col-lg-6">
                 <label style="font-size:22px; line-height:26px; color:#fff;" for="" class="form-label fw-bold my-4">Best time to call</label>
@@ -450,6 +445,7 @@
                   <option value="2">Morning</option>
                   <option value="3">Afternoon</option>
                   <option value="4">Night</option>
+                  <small style="color:#e74c3c" id="smalltime"></small>
                 </select>
               </div>
             </div>
@@ -458,7 +454,7 @@
               <div class="col-lg-6 forms-control">
                 <label style="font-size:22px; line-height:26px; color:#fff;" for="email" class="form-label fw-bold my-4">Email address</label><br>
                 <input name="email" id="email" type="text" class="form-input" placeholder="jane.doe@example.com">
-                <small></small>
+                <small style="color:#e74c3c" id="smallemail"></small>
               </div>
               <div class="col-lg-6">
                 <label for="" class="form-label fw-bold my-4" style="font-size:22px; line-height:26px; color:#fff;">What service are you interested in</label>
@@ -469,12 +465,13 @@
                   <option value="4">Pay-per-click marketing campaigns and ads</option>
                   <option value="5">Website migration services</option>
                 </select>
+                <small style="color:#e74c3c" id="smallserv"></small>
               </div>
             </div>
 
             <div class="row my-5">
               <div class="col-lg-6">
-                <button type="submit" class="btn btn-lg btn-primary">Send Request</button>
+                <button type="submit"  class="btn btn-lg btn-primary">Send Request</button>
               </div>
             </div>
           </form>
@@ -563,48 +560,5 @@
     </div>
 
   <marquee behavior="" direction="">CAVEAT: This is a student project and not an attempt to clone th existing website.</marquee>
-
-  <script>
-    const form = document.getElementById('form');
-    const firstName = document.getElementById('firstName');
-    const lastName = document.getElementById('lastName');
-    const phone = document.getElementById('phone');
-    const email = document.getElementById('email');
-
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-
-      validate();
-    });
-
-    function validate() {
-      const firstNameValue = firstName.value.trim();
-      const lastNameValue = lastName.value.trim();
-      const phoneValue = phone.value.trim();
-      const emailValue = email.value.trim();
-
-      if(firstName === '') {
-        setErrorFor(firstName, 'First Name cannot be blank');
-      }else {
-        setSuccessFor(firstName);
-      }
-
-    }
-
-    function setErrorFor(input, message) {
-      const formControl = input.parentElement;
-      const small = formsControl.querySelector('small');
-
-      small.innerText;
-
-      formControl.className = 'forms-control error';
-    }
-
-    function setSuccessFor(input) {
-      const formControl = input.parentElement;
-
-      formControl.className = 'forms-control success';
-    }
-  </script>
 </body>
 </html>

@@ -10,6 +10,7 @@
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <script defer src="./asana.js" charset="utf-8"></script>
 
   <style>
     *{
@@ -43,11 +44,17 @@
     #ident a .bi:hover{
       color: skyblue;
     }
-    /* @media screen and (max-width:960px) {
-      #asa{
-        display: none;
-      }
-    } */
+    input[type=text], input[type=text]:focus{
+      width:100%;
+      outline: 0;
+      border: 0;
+      /* border-bottom: 2px solid #fff; */
+      /* padding:10px; */
+      /* background: transparent; */
+      /* color:#fff; */
+      display: inline-block;
+    }
+
     @media screen and (max-width:960px) {
       #asa, #talk{
         display: none;
@@ -111,13 +118,13 @@
       <a href="index.html" class="navbar-brand"><img src="images/asan.png" alt="Asana logo" style="width: 200px; height: 40px;"></a>
 
       <div class="container-fluid">
-        <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" >
-          <span class="navbar-toggler-icon"></span>
+        <button style="border: 0;" class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" >
+          <span style="width: 20px; " class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav" style="color: #fff;">
 
-            
+
 
           <ul class="navbar-nav">
             <li class="navbar-item"><a class="nav-link" href="valuemax.html">ValueMax</a></li>
@@ -153,15 +160,17 @@
         <h4 class="display-6 mt-3 mb-5" id="talk">Talk with our sales team</h4>
         <h4 class="h6 mb-4" style="color: #F3A813;"> Fields marked with asterisk (*) are required.</h4>
 
-        <form name="myForm" onsubmit="return(validate())" action="">
+        <form name="myForm" id="forms" action="">
           <div class="row mb-4">
             <div class="col-md-6">
               <label for="" class="form-label mb-3 fw-bold">First Name <span style="color: #F3A813;"><sup>*</sup></span></label>
-              <input name="firstName" type="text" class="form-control" placeholder="e.g., John">
+              <input  name="firstName" id="myfn" type="text" class="form-control myinp" placeholder="e.g., John" >
+              <small style="color:#e74c3c" id="smallfn"></small>
             </div>
             <div class="col-md-6">
               <label for="" class="form-label mb-3 fw-bold">Last Name <span style="color: #F3A813;"><sup>*</sup></span></label>
-              <input name="lastName" type="text" class="form-control" placeholder="e.g., John">
+              <input name="lastName" id="myln" type="text" class="form-control" placeholder="e.g., John">
+              <small style="color:#e74c3c" id="smallln"></small>
             </div>
 
           </div>
@@ -169,11 +178,13 @@
           <div class="row mb-4">
             <div class="col-md-6">
               <label for="" class="form-label mb-3 fw-bold">Company Email <span style="color: #F3A813;"><sup>*</sup></span></label>
-              <input name="companyName" type="text" class="form-control" placeholder="name@company.com">
+              <input name="companyName" id="mycn" type="text" class="form-control" placeholder="name@company.com">
+              <small style="color:#e74c3c" id="smallcn"></small>
             </div>
             <div class="col-md-6 ">
               <label for="" class="form-label mb-3 fw-bold">Phone Number <span style="color: #F3A813;"><sup>*</sup></span></label>
-              <input name="numb" type="text" class="form-control" placeholder="+1 555 655 5656">
+              <input name="numb" id="myph"type="text" class="form-control" placeholder="+1 555 655 5656">
+              <small style="color:#e74c3c" id="smallph"></small>
             </div>
 
           </div>
@@ -181,7 +192,7 @@
           <div class="row mb-4">
             <div class="col-md-6">
               <label for="" class="form-label mb-3 fw-bold">Company Size <span style="color: #F3A813;"><sup>*</sup></span></label>
-              <select name="companySize" id="" class="form-select">
+              <select name="companySize" id="csi" class="form-select">
                 <option value="1">--Select--</option>
                 <option value="2">1-14</option>
                 <option value="3">15-49</option>
@@ -190,10 +201,11 @@
                 <option value="6">500-1999</option>
                 <option value="7">2000+</option>
               </select>
+              <small style="color:#e74c3c" id="smallcsi"></small>
             </div>
             <div class="col-md-6">
               <label for="" class="form-label mb-3 fw-bold">Company Headquarters <span style="color: #F3A813;"><sup>*</sup></span></label>
-              <select name="continent" id="" class="form-select">
+              <select name="continent" id="cont" class="form-select">
                 <option value="1">--Select--</option>
                 <option value="2">North America</option>
                 <option value="3">South America</option>
@@ -202,12 +214,14 @@
                 <option value="6">Africa</option>
                 <option value="7">Australia</option>
               </select>
+              <small style="color:#e74c3c" id="smallcont"></small>
           </div>
           <!-- comapny size and headquarter -->
           <div class="col-md-12 mb-4 mt-5">
             <label for="" class="form-label mb-3 fw-bold">What would you like to discuss? <span style="color: #F3A813;"><sup>*</sup></span>
             </label>
-            <textarea name="review"  id=""  class="form-control" style="height: 140px; resize: none;" placeholder="Tell us about your team and give details about a projec or process you would like to track in Asana..."></textarea>
+            <textarea name="review"  id="review"  class="form-control" style="height: 140px; resize: none;" placeholder="Tell us about your team and give details about a projec or process you would like to track in Asana..."></textarea>
+            <small id="smallreview" style="color:#e74c3c"></small>
           </div>
           <!-- textarea -->
           <div>
@@ -275,47 +289,5 @@
 
     </div>
   </div>
-
-  <script>
-    function validate(){
-
-
-      if(document.myForm.firstName.value===""){
-        alert("Input your first name");
-        document.myForm.firstName.focus();
-      }
-      if(document.myForm.lastName.value===""){
-        alert("Input your last name");
-        document.myForm.lastName.focus();
-      }
-      if(document.myForm.companyName.value===""){
-        alert("Input your company's name");
-        document.myForm.companyName.focus();
-      }
-      if(document.myForm.numb.value==""||document.myForm.numb.length<11||isNaN(document.myForm.numb.value)){
-        alert("Your Phone Number should be 11 digit");
-        document.myForm.numb.focus();
-        return false;
-      }
-      if(document.myForm.companySize.value==1){
-        alert("Select your company's size");
-        document.myForm.companySize.focus();
-        return false;
-      }
-      if(document.myForm.continent.value==1){
-        alert("Select your company's continent");
-        document.myForm.continent.focus();
-        return false;
-      }
-      if(document.myForm.review.value===""){
-        alert("Help us to get better by dropping a review");
-        document.myForm.review.focus();
-      }
-      else{
-        return true;
-      }
-
-    }
-  </script>
 </body>
 </html>
